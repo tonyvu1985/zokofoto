@@ -1,0 +1,4 @@
+/*slide down on home page */
+.boxgrid{ width: 183px; height: 299px; float:left; border: solid 3px #333; overflow: hidden; position: relative; background:#000 }
+.boxgrid img{ position: absolute; top: 0; left: 0; border: 0; }
+.boxgrid p{ padding: 60px 0px 0px; color:#afafaf; text-align:center; text-transform:uppercase; font-family: 'Life Savers', cursive;}
