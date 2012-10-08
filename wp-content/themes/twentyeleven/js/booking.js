@@ -121,7 +121,7 @@ function checkpackage(name){
 		
 		// product seesion package disable true
 		for(var i = 0; i < productsessionnodes.length; i++)
-		{
+		{#cont
 			productsessionnodes[i].disabled = false;
 			productsessionnodes[i].checked = false;
 		}
@@ -174,13 +174,13 @@ $("#send").replaceWith("<em>sending...</em>");
 
 $.ajax({
 type: 'POST',
-url: 'sendmessage.php',
+url: 'wp-content/themes/twentyeleven/sendmessage.php',
 data: $("#contact").serialize(),
 success: function(data) {
 if(data == "true") {
 $("#contact").fadeOut("fast", function(){
 $(this).before("<p><strong>Success! Your feedback has been sent, thanks :)</strong></p>");
-setTimeout("$.fancybox.close()", 1000);
+setTimeout("$.fancybox.close()", 10000);
 });
 }
 }

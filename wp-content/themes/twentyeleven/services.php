@@ -7,6 +7,7 @@ get_header(); ?>
 
 <div id="primary">
     <div id="content" role="main">
+        <div id="contact">
 		<p>STEP 1: CHOOSE YOUR PACKAGE</p>
       <div class="special-package-box">
         <p class="package-name"><input type="radio" id="specialpackage" name="package" value="special package" onclick="checkpackage(this)" /> Package: Special price $3000</p>  
@@ -85,6 +86,7 @@ get_header(); ?>
 	</table>
 	</form>
 </div>
+        </div>
     </div><!-- #content -->
 </div><!-- #primary -->
 

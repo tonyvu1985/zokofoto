@@ -2,7 +2,6 @@
 $sendto   = "vuductrung2003@gmail.com";
 $usermail = $_POST['email'];
 $content  = nl2br($_POST['msg']);
-
 $subject  = "New Feedback Message";
 $headers  = "From: " . strip_tags($usermail) . "\r\n";
 $headers .= "Reply-To: ". strip_tags($usermail) . "\r\n";
@@ -16,7 +15,7 @@ $msg .= "<p><strong>Message:</strong> ".$content."</p>\r\n";
 $msg .= "</body></html>";
 
 if(@mail($sendto, $subject, $msg, $headers)) {
-	echo "true";
+	echo $sendto;
 } else {
 	echo "false";
 }

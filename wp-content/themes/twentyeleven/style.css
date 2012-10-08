@@ -89,6 +89,7 @@ body {
 	float: left;
 	margin: 0 -26.4% 0 0;
 	width: 100%;
+        min-height: 500px;
 }
 #content {
 	margin: 0 34% 0 7.6%;
@@ -116,6 +117,9 @@ body {
 .singular #comments-title {
 	margin: 0 auto;
 	width: 68.9%;
+}
+.singular footer.entry-meta{
+    display: none;
 }
 
 /* Attachments */
@@ -199,7 +203,7 @@ body {
 	max-width: 1000px;
 }
 .one-column #content {
-	margin: 0 20px;
+	margin: 90px 20px 0px;
 	width: auto;
 }
 .one-column #nav-below {
@@ -548,6 +552,7 @@ a:hover {
 	display: block;
 	float: right;
 	margin: 2.5em 20px 0px 0px;
+        width:467px;
 }
 #access ul {
 	list-style: none;
@@ -1718,6 +1723,7 @@ section.recent-posts .other-recent-posts li:after {
 	top: -0.3em;
 	text-align: right;
 	z-index: 1;
+        display: none;
 }
 #nav-single .nav-previous,
 #nav-single .nav-next {
@@ -2384,7 +2390,7 @@ p.comment-form-comment {
 		font-size: 28px;
 	}
 	.entry-meta {
-		font-size: 12px;
+		font-size: 12px;                
 	}
 	blockquote {
 		margin: 0;
@@ -2532,7 +2538,7 @@ p.comment-form-comment {
 	#primary {
 		float: left;
 		margin: 0;
-		width: 100%;
+		width: 100%;                
 	}
 	#content {
 		margin: 0;
